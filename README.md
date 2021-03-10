@@ -1,7 +1,48 @@
-# Extracting The Scientific Method to Investing 
-In this expiriment I extracted and utilized unique indicators so seek healthy companies for long term investments.
+# Wokring Towards a Scientific Method of Investing 
+
+Our main objective is to reach a definitive Scientific Method for Investing. We wanted to look at all the main Financial Statements and in these find.
+1.	A means to optimize over time. 
+2.	A means of measuring and managing risk.
+3.	Based of 1 & 2 a means if valuing assets.
+We began and had to confine this introductory query to the Balance sheet which offered a multidimensional array of opportunities to learn and practice developmental skills.
 
 ---
+
+
+We used SinFin to download our csv files.
+ ![simfin](https://d7jore0ln5m9i.cloudfront.net/logo2.png)
+
+---
+
+As mentioned above we restricted ourselves to just the balance sheet and here is a breakdown of the Pandas DataFrames we sliced and concatenated to better be able to display values 
+
+```
+
+balance_sheet_cash_equal = [
+["Total Current Assets" ,
+"Cash, Cash Equivalents & Short Term Investments", 
+"Accounts & Notes Receivable", 
+'Treasury Stock', 
+'Retained Earnings']]
+  
+  
+  
+balance_sheet_tanglibles = [
+    ['Total Current Assets',
+     "Cash, Cash Equivalents & Short Term Investments",
+      "Property, Plant & Equipment, Net",
+      "Retained Earnings", 
+      "Total Equity"]]
+                                  
+
+balance_sheet_intanglibles = [
+    ['Treasury Stock', 
+     'Long Term Investments & Receivables', 
+     'Shares (Basic)', 
+     'Shares (Diluted)']]
+                                
+
+```
 
 * Technologies 
 
