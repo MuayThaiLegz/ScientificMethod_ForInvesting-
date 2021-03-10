@@ -1,5 +1,7 @@
 # Wokring Towards a Scientific Method of Investing 
 
+* Explanation 
+
 Our main objective is to reach a definitive Scientific Method for Investing. We wanted to look at all the main Financial Statements and in these find.
 1.	A means to optimize over time. 
 2.	A means of measuring and managing risk.
@@ -8,15 +10,18 @@ We began and had to confine this introductory query to the Balance sheet which o
 
 ---
 
+* Data
 
 We used SinFin to download our csv files.
 
  ![simfin](https://d7jore0ln5m9i.cloudfront.net/logo2.png)
 
 ---
+* About 
 
-As mentioned above we restricted ourselves to just the balance sheet and here is a breakdown of the Pandas DataFrames we sliced and concatenated to better be able to display values. We found that a time frame of four year helped deal with irregual 
+As mentioned above we restricted ourselves to just the balance sheet and here is a breakdown of the Pandas DataFrames we sliced and concatenated to better be able to display values. We found that a time frame of four year helped deal with irregular availability of companies and availability of that years balance sheet.
 
+* Python Code Examples 
 ```
 mask = us_balance_annual.index.get_level_values(level=1) > 2014 | (us_balance_annual.index.get_level_values(level=1) == 2018)
 us_balance_annual_ = us_balance_annual.loc[mask]
@@ -61,11 +66,10 @@ pandas is a Python package providing fast, flexible, and expressive data structu
 
 ---
 
-# Matplotlib 
-Matplotlib produces publication-quality figures in a variety of hardcopy formats and interactive environments across platforms. Matplotlib can be used in Python scripts, the Python and IPython shell, web application servers, and various graphical user interface toolkits.
+# Seaborn  
+Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
 
-![matplotlib](https://warehouse-camo.ingress.cmh1.psfhosted.org/e7ea6d65132d8dca8553640aac16d4b6389f89d6/68747470733a2f2f6d6174706c6f746c69622e6f72672f5f7374617469632f726561646d655f707265766965772e706e67)
-
+![seaborn](https://livecodestream.dev/post/how-to-build-beautiful-plots-with-python-and-seaborn/featured_hue585f61b28a74a671118de43150c5d63_166173_680x0_resize_q75_box.jpg)
 ---
 
 * Installations 
