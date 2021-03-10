@@ -10,13 +10,19 @@ We began and had to confine this introductory query to the Balance sheet which o
 
 
 We used SinFin to download our csv files.
+
  ![simfin](https://d7jore0ln5m9i.cloudfront.net/logo2.png)
 
 ---
 
-As mentioned above we restricted ourselves to just the balance sheet and here is a breakdown of the Pandas DataFrames we sliced and concatenated to better be able to display values 
+As mentioned above we restricted ourselves to just the balance sheet and here is a breakdown of the Pandas DataFrames we sliced and concatenated to better be able to display values. We found that a time frame of four year helped deal with irregual 
 
 ```
+mask = us_balance_annual.index.get_level_values(level=1) > 2014 | (us_balance_annual.index.get_level_values(level=1) == 2018)
+us_balance_annual_ = us_balance_annual.loc[mask]
+us_balance_annual_
+
+
 
 balance_sheet_cash_equal = [
 ["Total Current Assets" ,
@@ -27,7 +33,7 @@ balance_sheet_cash_equal = [
   
   
   
-balance_sheet_tanglibles = [
+  balance_sheet_tanglibles = [
     ['Total Current Assets',
      "Cash, Cash Equivalents & Short Term Investments",
       "Property, Plant & Equipment, Net",
