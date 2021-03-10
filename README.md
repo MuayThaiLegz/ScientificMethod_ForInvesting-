@@ -12,9 +12,12 @@ We began and had to confine this introductory query to the Balance sheet which o
 
 * Data
 
-We used SinFin to download our csv files.
+We used SinFin to download our csv files. https://simfin.com/data/bulk
+
+
 
  ![simfin](https://d7jore0ln5m9i.cloudfront.net/logo2.png)
+
 
 ---
 * About 
@@ -57,7 +60,7 @@ balance_sheet_intanglibles = [
 
 * Technologies 
 
-# Pandas
+# Pandas https://pandas.pydata.org/
 Package overview
 pandas is a Python package providing fast, flexible, and expressive data structures designed to make working with “relational” or “labeled” data both easy and intuitive. It aims to be the fundamental high-level building block for doing practical, real-world data analysis in Python. Additionally, it has the broader goal of becoming the most powerful and flexible open source data analysis/manipulation tool available in any language. It is already well on its way toward this goal.
 
@@ -66,21 +69,13 @@ pandas is a Python package providing fast, flexible, and expressive data structu
 
 ---
 
-# Seaborn  
+# Seaborn https://seaborn.pydata.org/
 Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
 
 ![seaborn](https://livecodestream.dev/post/how-to-build-beautiful-plots-with-python-and-seaborn/featured_hue585f61b28a74a671118de43150c5d63_166173_680x0_resize_q75_box.jpg)
 ---
 
 * Installations 
-
-# Pandas 
-https://pandas.pydata.org/docs/getting_started/install.html
-
----
-
-# Matplotlib 
-https://pypi.org/project/matplotlib/
 
 
 ---
