@@ -114,6 +114,13 @@ balance_data_neg = [
 * Technologies 
 
 # Pandas
+We used Pandas
+
+Importing the data.
+Creating dataframes with Pandas methods.
+Using Pandas methods on our dataframes.
+
+
 https://pandas.pydata.org/
 Package overview
 pandas is a Python package providing fast, flexible, and expressive data structures designed to make working with “relational” or “labeled” data both easy and intuitive. It aims to be the fundamental high-level building block for doing practical, real-world data analysis in Python. Additionally, it has the broader goal of becoming the most powerful and flexible open source data analysis/manipulation tool available in any language. It is already well on its way toward this goal.
@@ -123,6 +130,13 @@ pandas is a Python package providing fast, flexible, and expressive data structu
 ---
 
 # Seaborn
+We used Seaborn 
+
+In creating statistical graphics 
+The heatmap to display correlations in our data. To plot detail 
+It help fortifine our inital ideas in visual form.
+
+
 https://seaborn.pydata.org/
 Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
 
@@ -131,6 +145,13 @@ Seaborn is a Python data visualization library based on matplotlib. It provides 
 ---
 
 # Scikit-learn
+We used Scikit-learn 
+
+We used StandardScaler to scale our data as needed.
+We used PCA to decompose our data down in dimensions. 
+We used Kmeans as our ML Algo
+
+
 https://scikit-learn.org/stable/
 Scikit-learn provides a range of supervised and unsupervised learning algorithms via a consistent interface in Python.
 
