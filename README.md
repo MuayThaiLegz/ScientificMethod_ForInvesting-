@@ -107,7 +107,6 @@ pandas is a Python package providing fast, flexible, and expressive data structu
 
 ![Pandas](https://miro.medium.com/max/819/1*Dss7A8Z-M4x8LD9ccgw7pQ.png)
 
-
 ---
 
 # Seaborn
@@ -115,6 +114,15 @@ https://seaborn.pydata.org/
 Seaborn is a Python data visualization library based on matplotlib. It provides a high-level interface for drawing attractive and informative statistical graphics.
 
 ![seaborn](https://livecodestream.dev/post/how-to-build-beautiful-plots-with-python-and-seaborn/featured_hue585f61b28a74a671118de43150c5d63_166173_680x0_resize_q75_box.jpg)
+
+---
+
+# Scikit-learn
+https://scikit-learn.org/stable/
+Scikit-learn provides a range of supervised and unsupervised learning algorithms via a consistent interface in Python.
+
+![Scikit](https://miro.medium.com/max/866/1*1ouD8HMkmJffNSAMfvBSkw.png)
+
 ---
 
 * Installations 
