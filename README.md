@@ -96,6 +96,8 @@ balance_data_neg = [
 
 ```
 
+---
+
 * Technologies 
 
 # Pandas
