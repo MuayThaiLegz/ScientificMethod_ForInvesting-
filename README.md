@@ -37,11 +37,24 @@ We then looked at 4 companies in diversified industries to evaluate and compare 
 
 After creating the DataFrames we used the .corr() method to evaluate the theorized interrelationships and plotted a heat map to visualize these results 
 
-We also used a flexible method to plot our data. This will be the first example in our selction below.
+We also used a flexible method to plot our data. This will be an example in our selction below.
 
 * Python Code Examples 
 
 ```
+
+def clean_data(df):
+"""Returns df with Columns ['SimFinId', 'Currency'] drop with .drop funtion
+      .dropped function grouped by ['Ticker','Fiscal Year']  as type int
+      Divides values to turn into percentages 
+"""
+    
+    df.drop(['SimFinId', 'Currency'], inplace= True, errors='ignore', axis=1)
+    df = df.groupby(['Ticker','Fiscal Year']).mean().dropna().astype(int)
+   
+    return df /1000000000
+
+
 
 mask = us_balance_annual.index.get_level_values(level=1) > 2014 | (us_balance_annual.index.get_level_values(level=1) == 2018)
 us_balance_annual_ = us_balance_annual.loc[mask]
@@ -125,7 +138,8 @@ Scikit-learn provides a range of supervised and unsupervised learning algorithms
 
 ---
 
-* Installations 
+* Plots created 
+ 
 
 
 ---
