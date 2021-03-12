@@ -20,15 +20,41 @@ We used SinFin to download our csv files. https://simfin.com/data/bulk
 
 
 ---
+
 * About 
 
 As mentioned above we restricted ourselves to just the balance sheet and here is a breakdown of the Pandas DataFrames we sliced and concatenated to better be able to display values. We found that a time frame of four year helped deal with irregular availability of companies and availability of that years balance sheet.
 
+We sliced the balance sheet into four components based on their intrinsic representation, we list them below.
+All which are represented in the example code below.
+
+We then looked at 4 companies in diversified industries to evaluate and compare financial health based on these selected values. 
+
+---
+
+
+* Custom DataFrames and Plots
+
+After creating the DataFrames we used the .corr() method to evaluate the theorized interrelationships and plotted a heat map to visualize these results 
+
+We also used a flexible method to plot our data. This will be the first example in our selction below.
+
 * Python Code Examples 
+
 ```
+
 mask = us_balance_annual.index.get_level_values(level=1) > 2014 | (us_balance_annual.index.get_level_values(level=1) == 2018)
 us_balance_annual_ = us_balance_annual.loc[mask]
 us_balance_annual_
+
+
+
+balance_sheet_cash_equal.groupby(level=0).plot.bar(
+    title= ('Displays[balance_sheet_cash_equal] per Company'),
+    figsize=(17,13),
+    rot =360, 
+    grid =True, 
+    fontsize = 13)
 
 
 
@@ -41,19 +67,31 @@ balance_sheet_cash_equal = [
   
   
   
-  balance_sheet_tanglibles = [
-    ['Total Current Assets',
-     "Cash, Cash Equivalents & Short Term Investments",
-      "Property, Plant & Equipment, Net",
-      "Retained Earnings", 
-      "Total Equity"]]
+balance_sheet_tanglibles = [
+['Total Current Assets',
+"Cash, Cash Equivalents & Short Term Investments",
+"Property, Plant & Equipment, Net",
+"Retained Earnings", 
+"Total Equity"]]
                                   
 
+
 balance_sheet_intanglibles = [
-    ['Treasury Stock', 
-     'Long Term Investments & Receivables', 
-     'Shares (Basic)', 
-     'Shares (Diluted)']]
+['Treasury Stock', 
+'Long Term Investments & Receivables', 
+'Shares (Basic)', 
+'Shares (Diluted)']]
+     
+
+
+balance_data_neg = [
+["Inventories",
+ "Share Capital & Additional Paid-In Capital", 
+ "Payables & Accruals", "Total Liabilities", 
+ "Long Term Debt", 
+ 'Shares (Diluted)',
+ 'Total Liabilities & Equity', 
+ 'Total Current Liabilities']]   
                                 
 
 ```
