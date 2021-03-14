@@ -121,10 +121,12 @@ Creating dataframes with Pandas methods.
 Using Pandas methods on our dataframes.
 ---
 ```
-deal.hvplot.scatter(x='Total Liabilities',
-                  y='Total Current Assets',
-                  by='model4',
-                  hover_cols=['Ticker'])
+balance_sheet_tanglibles.groupby(level=0).plot.bar(
+    title= ('Displays[balance_sheet_tanglibles] per Company'),
+    figsize=(17,13),
+    rot =360, 
+    grid =True, 
+    fontsize = 13)
 ```
 ---
 https://pandas.pydata.org/
