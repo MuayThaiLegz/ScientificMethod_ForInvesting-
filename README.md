@@ -192,12 +192,21 @@ Scikit-learn provides a range of supervised and unsupervised learning algorithms
 
 ---
 
-* Plots created 
- 
+* Plots Created 
 
+Here we created bar plots depicting (Long Term Investment & Receivables, and Cash, Cash Equivalents & Short-Term Investments, overtime and by company). Both great indicators of company health. We also create a heatmap displaying variations to our initial data over time per selected companies. Another great way to gauge financial health. 
+
+![Plots+todisplay](https://user-images.githubusercontent.com/73854785/111190923-ce5f8880-8574-11eb-8620-f5854b59d67d.PNG)
 
 ---
-# Contributors
-I completed this as a one man team, but learned the value of teamwork ten times over.
 
+Here we present evidence to our initial inquiry about correlations both positive and negative amongst the values presented in the balance sheet 
+
+![fialplot](https://user-images.githubusercontent.com/73854785/111190940-d28ba600-8574-11eb-904a-5452a681cad6.PNG)
+
+ ---
+ 
+# Contributors
+
+I had tremendous help, encouragement and mentoring from my professor and friend Khaled Karman.
 
