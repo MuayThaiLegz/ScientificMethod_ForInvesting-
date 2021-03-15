@@ -1,4 +1,4 @@
-# Wokring Towards a Scientific Method of Investing 
+# Working Towards a Scientific Method of Investing 
 
 * Explanation 
 
