@@ -206,6 +206,12 @@ Here we present evidence to our initial inquiry about correlations both positive
 
  ---
  
+Here we display the process of creating, fitting, predicting organizing and plotting our Kmeans algorithm.
+
+ ![kmeans](https://user-images.githubusercontent.com/73854785/111194267-411e3300-8578-11eb-9fec-700b5aa5c265.PNG)
+
+---
+
 # Contributors
 
 I had tremendous help, encouragement and mentoring from my professor and friend Khaled Karman.
